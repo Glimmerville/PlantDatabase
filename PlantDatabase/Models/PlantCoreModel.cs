@@ -11,11 +11,30 @@ namespace PlantDatabase.Models
         [Key]
         public int PlantCoreID { get; set; }
         public string PlantSciName { get; set; }
-    }
+        
+        //These are all going to be foreign keys 
+        //Put the FK in the other table, relate it back here
+        //don't put the FK in here.
+        //if the plan only has one option you can put the FK in here (?)
 
+        //public int PlantCommonID { get; set; } //many
+        //public int FlowerShapeID { get; set; }
+        //public int PlantLeafArrID { get; set; }
+        //public int PlantLeafMarginID { get; set; }
+        //public int PlantBloomMonID { get; set; } //many
+        //public int FlowerColorID { get; set; } //many
+
+        //I am going to start with just these above ^^^^^
+    }
+    
     /* 
+    So an image could connect to a controller that fires off a query somehow.
+    models generally evolve and add features later.
+    start with an MVP 
+
+
     A plant can only have ONE core scientific name (for the purposes of this app)
-    A plant can only have ONE flower shape
+    A plant can only have ONE flower shape (simple/compund/umbrella/spike/assymetrical)
     A plant can only have ONE leaf arrangement (opposite, alternate, or whorled, or basal)
     A plant can only have ONE leaf margin (confirm this)
     A plant can only have ONE leaf tip (Not sure this is important at all, but round or pointed)
