@@ -130,6 +130,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BloomColorModelsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LeafEdgeModelsController.cs" />
+    <Compile Include="Controllers\LeafShapeModelsController.cs" />
     <Compile Include="Controllers\PlantCommonModelsController.cs" />
     <Compile Include="Controllers\PlantCoreModelsController.cs" />
     <Compile Include="Controllers\PlantLeafArrModelsController.cs" />
@@ -137,6 +139,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BloomColorModel.cs" />
+    <Compile Include="Models\LeafEdgeModel.cs" />
+    <Compile Include="Models\LeafShapeModel.cs" />
     <Compile Include="Models\PlantCommonModel.cs" />
     <Compile Include="Models\PlantCoreModel.cs" />
     <Compile Include="Models\PlantDatabaseContext.cs" />
@@ -198,6 +202,16 @@
     <Content Include="Views\PlantLeafArrModels\Details.cshtml" />
     <Content Include="Views\PlantLeafArrModels\Edit.cshtml" />
     <Content Include="Views\PlantLeafArrModels\Index.cshtml" />
+    <Content Include="Views\LeafShapeModels\Create.cshtml" />
+    <Content Include="Views\LeafShapeModels\Delete.cshtml" />
+    <Content Include="Views\LeafShapeModels\Details.cshtml" />
+    <Content Include="Views\LeafShapeModels\Edit.cshtml" />
+    <Content Include="Views\LeafShapeModels\Index.cshtml" />
+    <Content Include="Views\LeafEdgeModels\Create.cshtml" />
+    <Content Include="Views\LeafEdgeModels\Delete.cshtml" />
+    <Content Include="Views\LeafEdgeModels\Details.cshtml" />
+    <Content Include="Views\LeafEdgeModels\Edit.cshtml" />
+    <Content Include="Views\LeafEdgeModels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

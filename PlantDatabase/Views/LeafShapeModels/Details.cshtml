@@ -1,0 +1,26 @@
+﻿@model PlantDatabase.Models.LeafShapeModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LeafShapeModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LeafShapeStyle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeafShapeStyle)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LeafShapeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

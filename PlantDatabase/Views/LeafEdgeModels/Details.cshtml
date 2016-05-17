@@ -1,0 +1,26 @@
+﻿@model PlantDatabase.Models.LeafEdgeModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LeafEdgeModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LeafEdges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeafEdges)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LeafEdgeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
