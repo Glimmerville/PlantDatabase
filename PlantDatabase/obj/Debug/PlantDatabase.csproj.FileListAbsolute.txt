@@ -38,3 +38,7 @@ c:\users\wecancodeit\documents\visual studio 2015\Projects\PlantDatabase\PlantDa
 c:\users\wecancodeit\documents\visual studio 2015\Projects\PlantDatabase\PlantDatabase\obj\Debug\PlantDatabase.csprojResolveAssemblyReference.cache
 c:\users\wecancodeit\documents\visual studio 2015\Projects\PlantDatabase\PlantDatabase\obj\Debug\PlantDatabase.dll
 c:\users\wecancodeit\documents\visual studio 2015\Projects\PlantDatabase\PlantDatabase\obj\Debug\PlantDatabase.pdb
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\PlantDatabase\PlantDatabase\bin\EntityFramework.dll
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\PlantDatabase\PlantDatabase\bin\EntityFramework.SqlServer.dll
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\PlantDatabase\PlantDatabase\bin\EntityFramework.xml
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\PlantDatabase\PlantDatabase\bin\EntityFramework.SqlServer.xml

@@ -20,5 +20,11 @@ namespace PlantDatabase.Models
         }
 
         public System.Data.Entity.DbSet<PlantDatabase.Models.PlantCoreModel> PlantCoreModels { get; set; }
+
+        public System.Data.Entity.DbSet<PlantDatabase.Models.PlantLeafArrModel> PlantLeafArrModels { get; set; }
+
+        public System.Data.Entity.DbSet<PlantDatabase.Models.BloomColorModel> BloomColors { get; set; }
+
+        public System.Data.Entity.DbSet<PlantDatabase.Models.PlantCommonModel> PlantCommonModels { get; set; }
     }
 }

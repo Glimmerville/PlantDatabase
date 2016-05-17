@@ -1,0 +1,34 @@
+﻿@model PlantDatabase.Models.PlantCommonModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PlantCommonModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PlantCommon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlantCommon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PlantCoreID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlantCoreID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PlantCommonID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

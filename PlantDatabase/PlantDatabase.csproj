@@ -128,13 +128,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BloomColorModelsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PlantCommonModelsController.cs" />
     <Compile Include="Controllers\PlantCoreModelsController.cs" />
+    <Compile Include="Controllers\PlantLeafArrModelsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BloomColorModel.cs" />
+    <Compile Include="Models\PlantCommonModel.cs" />
     <Compile Include="Models\PlantCoreModel.cs" />
     <Compile Include="Models\PlantDatabaseContext.cs" />
+    <Compile Include="Models\PlantLeafArrModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +183,21 @@
     <Content Include="Views\PlantCoreModels\Details.cshtml" />
     <Content Include="Views\PlantCoreModels\Edit.cshtml" />
     <Content Include="Views\PlantCoreModels\Index.cshtml" />
+    <Content Include="Views\PlantCommonModels\Create.cshtml" />
+    <Content Include="Views\PlantCommonModels\Delete.cshtml" />
+    <Content Include="Views\PlantCommonModels\Details.cshtml" />
+    <Content Include="Views\PlantCommonModels\Edit.cshtml" />
+    <Content Include="Views\PlantCommonModels\Index.cshtml" />
+    <Content Include="Views\BloomColorModels\Create.cshtml" />
+    <Content Include="Views\BloomColorModels\Delete.cshtml" />
+    <Content Include="Views\BloomColorModels\Details.cshtml" />
+    <Content Include="Views\BloomColorModels\Edit.cshtml" />
+    <Content Include="Views\BloomColorModels\Index.cshtml" />
+    <Content Include="Views\PlantLeafArrModels\Create.cshtml" />
+    <Content Include="Views\PlantLeafArrModels\Delete.cshtml" />
+    <Content Include="Views\PlantLeafArrModels\Details.cshtml" />
+    <Content Include="Views\PlantLeafArrModels\Edit.cshtml" />
+    <Content Include="Views\PlantLeafArrModels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

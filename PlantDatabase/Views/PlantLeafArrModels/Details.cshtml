@@ -1,0 +1,26 @@
+﻿@model PlantDatabase.Models.PlantLeafArrModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PlantLeafArrModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PlantLeafArr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlantLeafArr)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PlantLeafArrID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

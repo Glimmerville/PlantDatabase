@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -9,7 +10,10 @@ namespace PlantDatabase.Models
     public class PlantCoreModel
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PlantCoreID { get; set; }
+
+        [Display(Name ="Scientific Name")]
         public string PlantSciName { get; set; }
         
         //These are all going to be foreign keys 

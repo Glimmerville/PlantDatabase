@@ -10,107 +10,107 @@ using PlantDatabase.Models;
 
 namespace PlantDatabase.Controllers
 {
-    public class PlantCoreModelsController : Controller
+    public class PlantLeafArrModelsController : Controller
     {
         private PlantDatabaseContext db = new PlantDatabaseContext();
 
-        // GET: PlantCoreModels
+        // GET: PlantLeafArrModels
         public ActionResult Index()
         {
-            return View(db.PlantCoreModels.ToList());
+            return View(db.PlantLeafArrModels.ToList());
         }
 
-        // GET: PlantCoreModels/Details/5
+        // GET: PlantLeafArrModels/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PlantCoreModel plantCoreModel = db.PlantCoreModels.Find(id);
-            if (plantCoreModel == null)
+            PlantLeafArrModel plantLeafArrModel = db.PlantLeafArrModels.Find(id);
+            if (plantLeafArrModel == null)
             {
                 return HttpNotFound();
             }
-            return View(plantCoreModel);
+            return View(plantLeafArrModel);
         }
 
-        // GET: PlantCoreModels/Create
+        // GET: PlantLeafArrModels/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: PlantCoreModels/Create
+        // POST: PlantLeafArrModels/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PlantCoreID,PlantSciName")] PlantCoreModel plantCoreModel)
+        public ActionResult Create([Bind(Include = "PlantLeafArrID,PlantLeafArr")] PlantLeafArrModel plantLeafArrModel)
         {
             if (ModelState.IsValid)
             {
-                db.PlantCoreModels.Add(plantCoreModel);
+                db.PlantLeafArrModels.Add(plantLeafArrModel);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(plantCoreModel);
+            return View(plantLeafArrModel);
         }
 
-        // GET: PlantCoreModels/Edit/5
+        // GET: PlantLeafArrModels/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PlantCoreModel plantCoreModel = db.PlantCoreModels.Find(id);
-            if (plantCoreModel == null)
+            PlantLeafArrModel plantLeafArrModel = db.PlantLeafArrModels.Find(id);
+            if (plantLeafArrModel == null)
             {
                 return HttpNotFound();
             }
-            return View(plantCoreModel);
+            return View(plantLeafArrModel);
         }
 
-        // POST: PlantCoreModels/Edit/5
+        // POST: PlantLeafArrModels/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PlantCoreID,PlantSciName")] PlantCoreModel plantCoreModel)
+        public ActionResult Edit([Bind(Include = "PlantLeafArrID,PlantLeafArr")] PlantLeafArrModel plantLeafArrModel)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(plantCoreModel).State = EntityState.Modified;
+                db.Entry(plantLeafArrModel).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(plantCoreModel);
+            return View(plantLeafArrModel);
         }
 
-        // GET: PlantCoreModels/Delete/5
+        // GET: PlantLeafArrModels/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PlantCoreModel plantCoreModel = db.PlantCoreModels.Find(id);
-            if (plantCoreModel == null)
+            PlantLeafArrModel plantLeafArrModel = db.PlantLeafArrModels.Find(id);
+            if (plantLeafArrModel == null)
             {
                 return HttpNotFound();
             }
-            return View(plantCoreModel);
+            return View(plantLeafArrModel);
         }
 
-        // POST: PlantCoreModels/Delete/5
+        // POST: PlantLeafArrModels/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            PlantCoreModel plantCoreModel = db.PlantCoreModels.Find(id);
-            db.PlantCoreModels.Remove(plantCoreModel);
+            PlantLeafArrModel plantLeafArrModel = db.PlantLeafArrModels.Find(id);
+            db.PlantLeafArrModels.Remove(plantLeafArrModel);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
