@@ -135,6 +135,7 @@
     <Compile Include="Controllers\PlantCommonModelsController.cs" />
     <Compile Include="Controllers\PlantCoreModelsController.cs" />
     <Compile Include="Controllers\PlantLeafArrModelsController.cs" />
+    <Compile Include="Controllers\TotalPlantDescriptionModelsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -145,6 +146,7 @@
     <Compile Include="Models\PlantCoreModel.cs" />
     <Compile Include="Models\PlantDatabaseContext.cs" />
     <Compile Include="Models\PlantLeafArrModel.cs" />
+    <Compile Include="Models\TotalPlantDescriptionModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -212,6 +214,11 @@
     <Content Include="Views\LeafEdgeModels\Details.cshtml" />
     <Content Include="Views\LeafEdgeModels\Edit.cshtml" />
     <Content Include="Views\LeafEdgeModels\Index.cshtml" />
+    <Content Include="Views\TotalPlantDescriptionModels\Create.cshtml" />
+    <Content Include="Views\TotalPlantDescriptionModels\Delete.cshtml" />
+    <Content Include="Views\TotalPlantDescriptionModels\Details.cshtml" />
+    <Content Include="Views\TotalPlantDescriptionModels\Edit.cshtml" />
+    <Content Include="Views\TotalPlantDescriptionModels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

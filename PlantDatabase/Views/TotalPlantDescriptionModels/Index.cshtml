@@ -1,0 +1,63 @@
+﻿@model IEnumerable<PlantDatabase.Models.TotalPlantDescriptionModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PlantCoreID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PlantCommonID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BloomColorID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PlantLeafArrID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeafShapeID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeafEdgeID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlantCoreID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlantCommonID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BloomColorID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlantLeafArrID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LeafShapeID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LeafEdgeID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PlantDescriptionID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PlantDescriptionID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PlantDescriptionID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -30,5 +30,7 @@ namespace PlantDatabase.Models
         public System.Data.Entity.DbSet<PlantDatabase.Models.LeafShapeModel> LeafShapeModels { get; set; }
 
         public System.Data.Entity.DbSet<PlantDatabase.Models.LeafEdgeModel> LeafEdgeModels { get; set; }
+
+        public System.Data.Entity.DbSet<PlantDatabase.Models.TotalPlantDescriptionModel> TotalPlantDescriptionModels { get; set; }
     }
 }

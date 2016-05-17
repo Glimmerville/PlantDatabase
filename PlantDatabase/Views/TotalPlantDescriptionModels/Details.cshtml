@@ -1,0 +1,66 @@
+﻿@model PlantDatabase.Models.TotalPlantDescriptionModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TotalPlantDescriptionModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PlantCoreID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlantCoreID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PlantCommonID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlantCommonID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BloomColorID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BloomColorID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PlantLeafArrID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlantLeafArrID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeafShapeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeafShapeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeafEdgeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeafEdgeID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PlantDescriptionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
